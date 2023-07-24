@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/Workout"
+        android:icon="@drawable/homeicon3"
+        android:title="" />
+
+
+    <item
+        android:id="@+id/Record"
+        android:icon="@drawable/dumbbellicon"
+        android:title="" />
+    <item
+        android:id="@+id/BMI"
+        android:icon="@drawable/videoicon"
+        android:title="" />
+    <item
+        android:id="@+id/Profile"
+        android:icon="@drawable/profileicon"
+        android:title="" />
+</menu>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "95961217367",
+    "firebase_url": "https://ticktok-948a8-default-rtdb.firebaseio.com",
+    "project_id": "ticktok-948a8",
+    "storage_bucket": "ticktok-948a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95961217367:android:cf987f4da55c0a6ce26612",
+        "android_client_info": {
+          "package_name": "com.example.gympro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95961217367-hdpg7in5teae9d0a1kqns5r7oc8kk5ct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9EsKo9dS7dQuJI6j-bt6dEYfXfXGeM2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95961217367-hdpg7in5teae9d0a1kqns5r7oc8kk5ct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95961217367:android:79e1a42dd68a4e03e26612",
+        "android_client_info": {
+          "package_name": "com.example.ticktok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95961217367-hdpg7in5teae9d0a1kqns5r7oc8kk5ct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9EsKo9dS7dQuJI6j-bt6dEYfXfXGeM2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95961217367-hdpg7in5teae9d0a1kqns5r7oc8kk5ct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
