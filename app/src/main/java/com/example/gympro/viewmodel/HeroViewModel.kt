@@ -28,14 +28,14 @@ class HeroViewModel : ViewModel() {
         )
         fullBody.add(
             DataModelOfExerciesTypeTwo(
-                "Fullesgs Body",
+                "Fu.... Body",
                 "4 Set x 12 Rep",
                 "https://firebasestorage.googleapis.com/v0/b/ticktok-948a8.appspot.com/o/chest%20workout%20pic%2Fc11.jpg?alt=media&token=3e6bc416-f7b3-4aec-ab13-086051d0c30b"
             )
         )
         fullBody.add(
             DataModelOfExerciesTypeTwo(
-                "Fullseh Body",
+                "Fu..... Body",
                 "4 Set x 12 Rep",
                "https://firebasestorage.googleapis.com/v0/b/ticktok-948a8.appspot.com/o/chest%20workout%20pic%2Fc11.jpg?alt=media&token=3e6bc416-f7b3-4aec-ab13-086051d0c30b"
             )
