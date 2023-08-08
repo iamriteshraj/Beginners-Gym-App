@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.gympro.Adapters.AdapterOfAllWorkouts
-import com.example.gympro.Adapters.Videoadapter
 import com.example.gympro.ItemViewModel.DataModelOfAllWorkouts
 import com.example.gympro.R
 import com.firebase.ui.database.FirebaseRecyclerOptions
@@ -16,21 +15,17 @@ import com.google.firebase.database.FirebaseDatabase
 
 class AllWorkouts : Fragment() {
 
-
-    lateinit var RV_all_Workouts: RecyclerView
+     lateinit var RV_all_Workouts: RecyclerView
     var adapterOfAll: AdapterOfAllWorkouts? = null
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         val view: View = inflater.inflate(R.layout.allworkouts, container, false)
 
 
         RV_all_Workouts = view.findViewById(R.id.RV_All_Workouts)
-
 
         val optionsB: FirebaseRecyclerOptions<DataModelOfAllWorkouts> =
             FirebaseRecyclerOptions.Builder<DataModelOfAllWorkouts>()
@@ -40,9 +35,10 @@ class AllWorkouts : Fragment() {
                 )
                 .build()
 
-        ///
 
-        println("Applec"+optionsB)
+        println("riteshq"+optionsB).toString()
+
+
         adapterOfAll = AdapterOfAllWorkouts(context, optionsB)
         RV_all_Workouts.adapter = adapterOfAll
 
@@ -63,4 +59,6 @@ class AllWorkouts : Fragment() {
         adapterOfAll!!.stopListening()
 
     }
+
+
 }

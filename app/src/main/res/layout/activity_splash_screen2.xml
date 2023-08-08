@@ -37,6 +37,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:visibility="gone"
         android:id="@+id/buttonCWG"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="255dp"

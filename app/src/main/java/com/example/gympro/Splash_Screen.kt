@@ -1,10 +1,10 @@
 package com.example.gympro
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 class Splash_Screen : AppCompatActivity() {
 
@@ -16,13 +16,16 @@ class Splash_Screen : AppCompatActivity() {
 
 
         btnCWG = findViewById(R.id.buttonCWG)
-        btnCWG.setOnClickListener {
 
-            Handler().postDelayed({ //
-                val i = Intent(this@Splash_Screen, MainActivity::class.java)
-                startActivity(i)
-            }, 250)
 
-        }
+        Handler().postDelayed({ //
+            val i = Intent(this@Splash_Screen, MainActivity::class.java)
+            startActivity(i)
+            finish();
+        }, 500)
+
+
+
+
     }
 }

@@ -18,9 +18,7 @@ import com.example.gympro.R
 class AdapterOfWorkoutByBodyPart(private val WorkoutList: ArrayList<DataModelOfExerciesType>, private val context: Context?) :
     RecyclerView.Adapter<AdapterOfWorkoutByBodyPart.ViewHolder>() {
 
-    //////
     private lateinit var mListener: onItemClickListener
-
     interface onItemClickListener {
         fun onItemClick(position: Int)
     }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C2CFCB"
+    android:background="#FFFFFF"
     android:id="@+id/llmain"
     tools:context=".FragmentOfHomeScreen.FragmentOfProfiles.BMI_Result">
 
@@ -36,6 +36,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="400dp"
@@ -67,7 +68,7 @@
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="255dp"
         android:layout_height="55dp"
-        android:layout_marginTop="468dp"
+        android:layout_marginTop="396dp"
         android:backgroundTint="#F89090"
         android:gravity="center"
         android:text="Calculate BMI"
@@ -75,6 +76,7 @@
         android:textSize="20dp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#000" />

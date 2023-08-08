@@ -17,7 +17,6 @@ import com.example.gympro.viewmodel.HeroViewModel
 class Hero : Fragment() {
 
 
-
     var position: Int = 0
     var path: String = ""
     lateinit var recyclerView: RecyclerView
@@ -62,7 +61,6 @@ class Hero : Fragment() {
                 loadFragment(heroViewModel.arrayListOfTriceps, path)
             }
 
-
             3 -> {
                 loadFragment(heroViewModel.arrayListOfBack, path)
             }
@@ -70,6 +68,23 @@ class Hero : Fragment() {
             4 -> {
                 loadFragment(heroViewModel.arrayListOfBiceps, path)
             }
+
+            5 -> {
+                loadFragment(heroViewModel.arrayListOfShoulder, path)
+            }
+
+            6 -> {
+                loadFragment(heroViewModel.arrayListOfLeg, path)
+            }
+
+            7 -> {
+                loadFragment(heroViewModel.arrayListOfAbs, path)
+            }
+
+            8 -> {
+                loadFragment(heroViewModel.arrayListOfAdon, path)
+            }
+
 
         }
 

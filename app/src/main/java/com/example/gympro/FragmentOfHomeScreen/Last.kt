@@ -22,22 +22,22 @@ class Last : Fragment() {
     ): View? {
         val view: View = inflater.inflate(R.layout.fragment_last, container, false)
 
-        videoview = view.findViewById(R.id.videoView)
-
-        position = arguments?.getInt("RRRB")!!.toInt()
-        path=arguments?.getString("Apple")!!.toString()
-
-
-        if (path=="Full Body")
-        {
-
-            if (position==0)
-            {
-               // LoadExerciseVideo()
-                Toast.makeText(context,"1-1",Toast.LENGTH_SHORT).show()
-
-            }
-        }
+//        videoview = view.findViewById(R.id.videoView)
+//
+//        position = arguments?.getInt("RRRB")!!.toInt()
+//        path=arguments?.getString("Apple")!!.toString()
+//
+//
+//        if (path=="Full Body")
+//        {
+//
+//            if (position==0)
+//            {
+//               // LoadExerciseVideo()
+//                Toast.makeText(context,"1-1",Toast.LENGTH_SHORT).show()
+//
+//            }
+//        }
 
 
 

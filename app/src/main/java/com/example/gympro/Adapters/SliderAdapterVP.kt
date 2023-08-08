@@ -5,16 +5,28 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.gympro.ItemViewModel.SliderModelVP
 import com.example.gympro.R
+import com.example.gympro.util.OnItemClickListner
 
-class SliderAdapterVP(val List: ArrayList<SliderModelVP>, val context: Context) :
+class SliderAdapterVP(
+    val List: ArrayList<SliderModelVP>,
+    val context: Context,
+    var onItemClickListner: OnItemClickListner
+) :
     RecyclerView.Adapter<SliderAdapterVP.ViewHolder>() {
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View, onItemClickListner: OnItemClickListner) :
+        RecyclerView.ViewHolder(itemView) {
 
+        init {
+            itemView.setOnClickListener {
+                onItemClickListner.onclick(adapterPosition)
+
+            }
+
+        }
 
         val IMAGESLIDER: ImageView = itemView.findViewById(R.id.IV1)
 
@@ -23,8 +35,9 @@ class SliderAdapterVP(val List: ArrayList<SliderModelVP>, val context: Context) 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
 
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.sliderlayout_item, parent, false)
-        return ViewHolder(view)
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.sliderlayout_item, parent, false)
+        return ViewHolder(view, onItemClickListner)
     }
 
     override fun getItemCount(): Int {
@@ -40,10 +53,6 @@ class SliderAdapterVP(val List: ArrayList<SliderModelVP>, val context: Context) 
             .load(current_item.IMAGE)
             .into(holder.IMAGESLIDER)
 
-        holder.itemView.setOnClickListener {
-
-            Toast.makeText(context, current_item.ID.toString(), Toast.LENGTH_SHORT).show()
-        }
 
     }
 

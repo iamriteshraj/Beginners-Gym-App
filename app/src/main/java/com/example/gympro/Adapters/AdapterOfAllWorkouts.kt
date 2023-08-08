@@ -39,6 +39,7 @@ class AdapterOfAllWorkouts( val context: Context?, optionsB: FirebaseRecyclerOpt
         model: DataModelOfAllWorkouts
     ) {
 
+        println("SONU"+model.name)
         holder.workoutName.text = model.name
         holder.workoutSection.text = model.section
       // holder.workoutImage.setImageResource(model.url.hashCode())
